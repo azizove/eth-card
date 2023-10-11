@@ -1,10 +1,8 @@
-const path = require("path");
+// @ts-check
 
+/**
+ * @type {import('next').NextConfig}
+ **/
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
-  output: "standalone",
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, "../../"),
-  },
 };

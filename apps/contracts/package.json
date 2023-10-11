@@ -2,8 +2,13 @@
   "name": "contracts",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "azizove",
   "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy": "hardhat deploy",
+    "deploy:ganache": "npx hardhat run --network ganache scripts/deploy.ts"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "hardhat": "^2.18.0"
