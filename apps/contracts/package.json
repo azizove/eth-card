@@ -7,10 +7,13 @@
     "build": "hardhat compile",
     "clean": "hardhat clean",
     "deploy": "hardhat deploy",
-    "deploy:ganache": "npx hardhat run --network ganache scripts/deploy.ts"
+    "deploy:ganache": "hardhat run --network ganache scripts/deploy.ts",
+    "deploy:sepolia": "hardhat run --network sepolia scripts/deploy.ts",
+    "export:abi": "hardhat export-abi --no-compile"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "hardhat": "^2.18.0"
+    "hardhat": "^2.18.0",
+    "hardhat-abi-exporter": "^2.10.1"
   }
 }
